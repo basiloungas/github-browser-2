@@ -1,5 +1,8 @@
 import {createStore} from 'redux';
 
-import rootReducer from './reducers';
+import getRootReducer from './reducers';
 
-export default () => createStore(rootReducer);
+export default extraReducers => createStore(
+  getRootReducer(extraReducers),
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
