@@ -1,29 +1,25 @@
 import React from 'react';
+import {Grid, Row, Col} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 
 import ErrorBoundary from '../errorBoundary';
 
-const Layout = (props) => {
-  const {children} = props;
-
+const Layout = ({children}) => {
   return (
-    <ErrorBoundary>
-      <header>
-        <p>Header</p>
-      </header>
+    <Grid>
+        <Row>
+          <Col xs={12}>
+            <h1>
+              <Link to={'/'}>Github browser</Link>
+            </h1>
+          </Col>
+        </Row>
 
-      <section>
-        {children}
-      </section>
-
-      <footer>
-        <p>Footer</p>
-      </footer>
-    </ErrorBoundary>
+        <ErrorBoundary>
+          {children}
+        </ErrorBoundary>
+    </Grid>
   );
 };
-
-// Layout.propTypes = {
-//   children: React.PropTypes.node.isRequired,
-// };
 
 export default Layout;

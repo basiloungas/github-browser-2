@@ -1,17 +1,28 @@
-import React, {Fragment} from 'react';
-import {Link} from 'react-router-dom';
+import React from 'react';
+import {Jumbotron, Button} from 'react-bootstrap';
 
-const Homepage = (props) => {
+import Page from '../../components/page';
+
+const Homepage = ({history}) => {
+  const clickHandler = (e) => {
+    e.preventDefault();
+
+    history.push('/users');
+  }
+
   return (
-    <Fragment>
-      <h1>Welcome to the Github users browser portal</h1>
-      <Link to={'/users'}>See the list of users</Link>
-    </Fragment>
+    <Page header={'Homepage'}>
+      <Jumbotron>
+        <p>Welcome to the Github user browser portal!</p>
+        <p>Go ahead and browse all the users.</p>
+        <p>
+          <Button bsStyle="primary" onClick={clickHandler}>
+            Browse users
+          </Button>
+        </p>
+      </Jumbotron>
+    </Page>
   );
 };
-
-// Homepage.propTypes = {
-//   children: React.PropTypes.node.isRequired,
-// };
 
 export default Homepage;

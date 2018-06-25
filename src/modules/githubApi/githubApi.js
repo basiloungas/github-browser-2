@@ -18,7 +18,7 @@ class GithubAPI {
     this.store = store;
   }
 
-  fetchUsers() {
+  fetchUsers = () => {
     const url = `${this.baseUrl}/users`;
     const options = this._createOptions();
     const type = Actions.ActionTypes.fetchUsers;
@@ -26,15 +26,15 @@ class GithubAPI {
     return this._fetch(url, options, type);
   }
 
-  fetchMoreUsers() {
-    const url = selectors.getNextPage(this.store);
+  fetchMoreUsers = () => {
+    const url = selectors.getNextPage(this.store.getState());
     const options = this._createOptions();
     const type = Actions.ActionTypes.fetchMoreUsers;
 
     return this._fetch(url, options, type);
   }
 
-  fetchUser(userName) {
+  fetchUser = (userName) => {
     const url = `${this.baseUrl}/users/${userName}`;
     const options = this._createOptions();
     const type = Actions.ActionTypes.fetchUser;

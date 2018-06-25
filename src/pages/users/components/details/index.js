@@ -1,10 +1,20 @@
-import {compose} from 'recompose';
+import React from 'react';
+import {Well} from 'react-bootstrap';
 
-import Component from './component';
-import {showLoaderIfLoading} from '../../../../components/loader';
-import githubApi from '../../../../modules/githubApi';
+import NaviLink from '../../../../components/naviLink';
+import Page from '../../../../components/page';
 
-export default compose(
-  githubApi.withUser,
-  showLoaderIfLoading(props => !!props.isFetching)
-)(Component);
+import UserDetails from './components/userDetails';
+
+const Listing = () => {
+  return (
+    <Page header={'User details'}>
+      <NaviLink link={'/users'} text={'Back to list'} />
+      <Well>
+        <UserDetails />
+      </Well>
+    </Page>
+  );
+};
+
+export default Listing;

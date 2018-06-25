@@ -14,8 +14,4 @@ const Users = (props) => {
   );
 };
 
-// Users.propTypes = {
-//   children: React.PropTypes.node.isRequired,
-// };
-
 export default Users;
