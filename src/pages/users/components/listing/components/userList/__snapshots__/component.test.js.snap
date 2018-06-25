@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages > Users > Listing > UserList renders users on the list 1`] = `
+<React.Fragment>
+  <styled.div>
+    <Styled(Col)
+      key="1"
+      lg={3}
+      md={4}
+      sm={6}
+      xs={12}
+    >
+      <ListGroupItem
+        bsClass="list-group-item"
+        header="login1"
+        href="/users/login1"
+        key="1"
+        listItem={false}
+        onClick={[Function]}
+      >
+        <Styled(Image)
+          alt="login1's thumbnail"
+          responsive={true}
+          src="avatar_url1"
+          thumbnail={true}
+        />
+      </ListGroupItem>
+    </Styled(Col)>
+    <Styled(Col)
+      key="2"
+      lg={3}
+      md={4}
+      sm={6}
+      xs={12}
+    >
+      <ListGroupItem
+        bsClass="list-group-item"
+        header="login2"
+        href="/users/login2"
+        key="2"
+        listItem={false}
+        onClick={[Function]}
+      >
+        <Styled(Image)
+          alt="login2's thumbnail"
+          responsive={true}
+          src="avatar_url2"
+          thumbnail={true}
+        />
+      </ListGroupItem>
+    </Styled(Col)>
+    <Clearfix
+      bsClass="clearfix"
+      componentClass="div"
+    />
+  </styled.div>
+  <Styled(Button)
+    disabled={false}
+    onClick={[Function]}
+  >
+    Load More Users
+  </Styled(Button)>
+</React.Fragment>
+`;

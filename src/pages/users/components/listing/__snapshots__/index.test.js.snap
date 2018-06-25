@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages > Users > Listing renders correctly 1`] = `
+<Page
+  header="User list"
+>
+  <NaviLink
+    link="/"
+    text="Back to homepage"
+  />
+  <Well
+    bsClass="well"
+  >
+    <withGithubAPIWrapper />
+  </Well>
+</Page>
+`;
