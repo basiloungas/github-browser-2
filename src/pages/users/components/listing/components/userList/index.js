@@ -1,5 +1,5 @@
 import {compose} from 'recompose';
-import {withRouter} from 'react-router'
+import {withRouter} from 'react-router';
 
 import Component from './component';
 import {showLoaderIfLoading} from '../../../../../../components/loader';

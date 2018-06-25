@@ -1,4 +1,4 @@
-import {createSelector} from 'reselect'
+import {createSelector} from 'reselect';
 import {REDUCER_KEY} from './reducer';
 
 const getIsFetching = state => state[REDUCER_KEY].isFetching;
@@ -26,4 +26,4 @@ export default {
   getNextPage,
   getUsersList,
   getUser,
-}
+};

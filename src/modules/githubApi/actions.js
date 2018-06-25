@@ -1,10 +1,8 @@
-
 export const ActionTypes = {
   fetchUsers: 'fetchUsers',
   fetchMoreUsers: 'fetchMoreUsers',
   fetchUser: 'fetchUser',
 }
-
 
 export const FETCH_USERS = 'FETCH_USERS';
 export const fetchUsers = () => ({
@@ -23,7 +21,6 @@ export const fetchUsersFail = payload => ({
   payload,
 });
 
-
 export const FETCH_MORE_USERS = 'FETCH_MORE_USERS';
 export const fetchMoreUsers = () => ({
   type: FETCH_MORE_USERS,
@@ -40,7 +37,6 @@ export const fetchMoreUsersFail = payload => ({
   type: FETCH_MORE_USERS_FAIL,
   payload,
 });
-
 
 export const FETCH_USER = 'FETCH_USER';
 export const fetchUser = () => ({

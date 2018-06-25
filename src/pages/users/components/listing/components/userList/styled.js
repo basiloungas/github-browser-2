@@ -20,7 +20,6 @@ export const Image = styled(BootstrapImage)`
   height: 300px; /* optional, but in my case it was good */
 `;
 
-
 export const LoadButton = styled(Button)`
   width: 100%;
   font-size: 1.5em;

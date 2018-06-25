@@ -2,8 +2,6 @@ import Provider from './provider';
 import reducer from  './reducer';
 import withUsers from './hocs/withUsers';
 import withUser from './hocs/withUser';
-// import selectors from './selectors'; //??
-// import actions from './actions'; //??
 
 /**
  * This is the GithubAPI module
@@ -20,6 +18,4 @@ export default {
   reducer,
   withUsers,
   withUser,
-  // selectors,
-  // actions,
 };

@@ -11,7 +11,7 @@ export const Payload = styled.pre`
 export const ImageWrapper = styled.div`
   width: 120px;
   height: 120px;
-  float:left;
+  float: left;
   margin-right: 20px;
 `;
 

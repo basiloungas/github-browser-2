@@ -11,7 +11,7 @@ import {
   LoadButton,
 } from './styled';
 
-const Listing = (props) => {
+const Listing = props => {
   const {
     users,
     loadMore,

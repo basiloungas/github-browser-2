@@ -13,6 +13,6 @@ const Provider = props => {
       {children}
     </GithubInstanceContext.Provider>
   );
-}
+};
 
 export default Provider;

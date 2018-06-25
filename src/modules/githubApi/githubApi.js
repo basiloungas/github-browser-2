@@ -3,7 +3,6 @@ import selectors  from './selectors';
 import * as Actions from './actions';
 
 class GithubAPI {
-
   baseUrl = 'https://api.github.com';
 
   requestOptions = {
@@ -62,7 +61,7 @@ class GithubAPI {
         const action = Actions[`${type}Fail`];
 
         this._dispatchAction(action(error));
-      })
+      });
   }
 
   _createOptions(options) {

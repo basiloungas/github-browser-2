@@ -14,26 +14,25 @@ class ErrorBoundary extends React.Component {
   }
 
   render() {
-    // TODO: create nice UI
-    if (!!this.state.error) {
-      return (
-        <Row>
-          <Jumbotron>
-            <h1>Something went wrong.</h1>
-            <p>
-              This view handles the the ErrorBoundary concept introduced in React 16.
-              <br />
-              An error happened somewhere in the react codebase and this is handled through this UI.
-            </p>
-            <code>
-              {JSON.stringify(this.state.error, null, 2)}
-            </code>
-          </Jumbotron>
-        </Row>
-      );
+    if (!this.state.error) {
+      return this.props.children;
     }
 
-    return this.props.children;
+    return (
+      <Row>
+        <Jumbotron>
+          <h1>Something went wrong.</h1>
+          <p>
+            This view handles the the ErrorBoundary concept introduced in React 16.
+            <br />
+            An error happened somewhere in the react codebase and this is handled through this UI.
+          </p>
+          <code>
+            {JSON.stringify(this.state.error, null, 2)}
+          </code>
+        </Jumbotron>
+      </Row>
+    );
   }
 }
 

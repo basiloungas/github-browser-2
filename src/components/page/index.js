@@ -1,12 +1,7 @@
 import React from 'react';
 import {Row, Col, PageHeader} from 'react-bootstrap';
 
-const Page = (props) => {
-  const {
-    header,
-    children,
-  } = props;
-
+const Page = ({header, children}) => {
   return (
     <Row>
       <Col xs={12}>

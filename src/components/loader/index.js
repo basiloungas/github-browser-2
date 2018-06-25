@@ -11,10 +11,11 @@ const LoaderComponent = () => {
   );
 }
 
-export const showLoaderIfLoading = isLoading =>
-  branch(
+export const showLoaderIfLoading = isLoading => {
+  return branch(
     isLoading,
     renderComponent(LoaderComponent)
-  )
+  );
+};
 
 export default LoaderComponent;

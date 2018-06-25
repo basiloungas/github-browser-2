@@ -11,6 +11,6 @@ const NaviLink = ({link, text}) => {
       </Link>
     </Alert>
   );
-}
+};
 
 export default NaviLink;
