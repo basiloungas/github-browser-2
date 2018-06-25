@@ -1,7 +1,7 @@
 import * as Actions from './actions';
 import * as helpers from './helpers';
 
-const defaultState = {
+export const defaultState = {
   isFetching: false,
   isFetchingMore: false, // TODO: refactor those loaders into one??
   isFetchingSingle: false,
@@ -13,7 +13,7 @@ const defaultState = {
 
 export const REDUCER_KEY = 'github_api';
 
-const reducer = (state = defaultState, action) => {
+export const reducer = (state = defaultState, action) => {
   const { type, payload = {} } = action;
   const { data, headers } = payload;
 
